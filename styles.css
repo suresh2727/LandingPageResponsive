@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+}
+
+#left {
+  width: 40%;
+  position: relative;
+  height: 100%;
+}
+
+#right {
+  width: 60%;
+  height: 100%;
+}
+
+#rtop {
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+}
+
+#rbottom {
+  width: 100%;
+  height: 50%;
+  background-image: url("https://images.unsplash.com/photo-1622955658214-d05c1c6fcf84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80");
+  background-position: left;
+  background-size: cover;
+}
+
+#rtopl {
+  width: 50%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1591073113125-e46713c829ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+#rtopr {
+  width: 50%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1501746877-14782df58970?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80");
+  background-position: top;
+  background-size: cover;
+}
+
+#lnav {
+  display: flex;
+  padding: 20px 30px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#lnavr {
+  display: flex;
+  align-items: center;
+}
+#lnavr a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+#lnavr i {
+  color: royalblue;
+  fill: royalblue;
+}
+
+#left #textcenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#textcenter h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+#textcenter p {
+  opacity: 0.6;
+  font-size: 16px;
+  line-height: 15px;
+  margin: 20px 0px;
+}
+
+#textcenter a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px dotted black;
+  padding-bottom: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+@media (max-width: 500px) {
+  #main {
+    flex-direction: column;
+  }
+
+  #main #left {
+    width: 100%;
+  }
+
+  #main #left h1 {
+    font-size: 40px;
+  }
+
+  #main #right {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
