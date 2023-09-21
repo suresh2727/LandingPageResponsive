@@ -1,2 +1,3 @@
 # LandingPageResponsive
-Landing Page of Mango. 
+With beautiful landing page of mango
+
